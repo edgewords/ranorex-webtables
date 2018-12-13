@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{BA88BCC0-531C-473E-A57C-81E909C42CC3}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>webTables</RootNamespace>
+    <AssemblyName>webTables</AssemblyName>
+    <RanorexVersion>8.3</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>19f66dfc-39d1-4161-bbcc-26fafdfa4644</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>c68df2f2-f19f-4a1d-865e-9e8f5e6f17a8</id>
+    </Compile>
+    <Compile Include="FunctionLib.cs">
+      <id>1ffd817a-95c3-40a5-bb09-f0280a3c0e03</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>613e8da2-5758-4093-b285-118dbda3cc43</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>7b5cbd7b-0f08-47f8-8aba-41d95b7c5379</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c0465e40-5b9c-406e-a269-b338cca0c4f4</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>7b5cbd7b-0f08-47f8-8aba-41d95b7c5379</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f37309f6-7ad8-46a9-9e75-f88a1ec3cce8</id>
+    </Compile>
+    <Compile Include="webTablesRepository.cs">
+      <BoundTo>19f66dfc-39d1-4161-bbcc-26fafdfa4644</BoundTo>
+      <DependentUpon>webTablesRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>b40b0ead-1b0c-40a9-a4f1-491c1509b529</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>cc18db8c-b92d-4788-b40f-ab7eb931706f</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>19f66dfc-39d1-4161-bbcc-26fafdfa4644</BoundTo>
+      <id>7b5cbd7b-0f08-47f8-8aba-41d95b7c5379</id>
+      <recordtableid>0ba4e433-e636-446e-a3d4-7017b8f83660</recordtableid>
+    </None>
+    <None Include="webTablesRepository.rximg">
+      <BoundTo>19f66dfc-39d1-4161-bbcc-26fafdfa4644</BoundTo>
+      <DependentUpon>webTablesRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>110b7e1c-d2a6-496a-9eef-3d730c6ff589</id>
+    </None>
+    <None Include="webTablesRepository.rxrep">
+      <id>19f66dfc-39d1-4161-bbcc-26fafdfa4644</id>
+      <repoid>c7aab41a-d6d0-4652-9f1f-e15174711d7d</repoid>
+      <reporootid>155022b9-d62b-4e61-ab23-c188c3a757b6</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="webTables.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>3103124e-7672-42c1-82aa-53018471eb0c</id>
+    </Content>
+    <Content Include="webTables.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2be5d475-c17b-4600-8909-9bd29210192a</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

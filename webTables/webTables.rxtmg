@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.3">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="webTables"
+      id="4c05c6c8-4abb-43a7-bbeb-6e100d3cc570"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="webTables"
+      id="4c05c6c8-4abb-43a7-bbeb-6e100d3cc570"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
